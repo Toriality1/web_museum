@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
             min-height: 100vh;
             margin: 0;
         }
+
         .container {
             background-color: #ffffff;
             padding: 3rem;
@@ -25,22 +27,26 @@
             max-width: 90%;
             width: 500px;
         }
+
         h1 {
             color: #2d3748;
             font-size: 3rem;
             margin-bottom: 1.5rem;
             font-weight: 700;
         }
+
         p {
             color: #4a5568;
             font-size: 1.25rem;
             margin-bottom: 2rem;
         }
+
         .link-grid {
             display: flex;
             flex-direction: column;
             gap: 1rem;
         }
+
         .link-button {
             display: block;
             padding: 1rem 2rem;
@@ -52,21 +58,23 @@
             font-size: 1.125rem;
             transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
         }
+
         .link-button:hover {
             background-color: #4299e1;
             transform: translateY(-2px);
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Welcome!</h1>
         <p>This is the root service. Choose a microservice to visit:</p>
-        <div class="link-grid">
-            <a href="http://localhost:8081/" class="link-button">Go to HTML-Only Service</a>
-            <a href="http://localhost:8082/" class="link-button">Go to PHP-Only Service</a>
+        <div class="linkn-grid">
+            <a href="./1990" class="link-button">Go to HTML-Only Service</a>
+            <a href="./2000" class="link-button">Go to PHP-Only Service</a>
         </div>
     </div>
 </body>
-</html>
 
+</html>
