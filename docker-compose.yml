@@ -1,0 +1,27 @@
+services:
+  root_service:
+    build: ./root
+    ports:
+      - "8080:80"
+    container_name: root_service_container
+    develop:
+      watch:
+        - path: ./root
+          target: /usr/share/nginx/html
+          action: sync
+    depends_on:
+      - 1990_service
+      - 2000_service
+
+  1990_service:
+    build: ./1990
+    ports:
+      - "8081:80"
+    container_name: 1990_service_container
+
+  2000_service:
+    build: ./2000
+    ports:
+      - "8082:80"
+    container_name: 2000_service_container
+

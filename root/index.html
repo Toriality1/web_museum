@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Microservice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 3rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            max-width: 90%;
+            width: 500px;
+        }
+        h1 {
+            color: #2d3748;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        p {
+            color: #4a5568;
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        .link-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .link-button {
+            display: block;
+            padding: 1rem 2rem;
+            background-color: #63b3ed;
+            color: white;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+        }
+        .link-button:hover {
+            background-color: #4299e1;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>This is the root service. Choose a microservice to visit:</p>
+        <div class="link-grid">
+            <a href="http://localhost:8081/" class="link-button">Go to HTML-Only Service</a>
+            <a href="http://localhost:8082/" class="link-button">Go to PHP-Only Service</a>
+        </div>
+    </div>
+</body>
+</html>
+
